@@ -9,7 +9,7 @@ jobs:
           name: Build
           command: mvn clean install
       - store_artifacts:
-          path: apc/TestReport/Test-Automaton-Report.html
+          path: TestReport/Test-Automaton-Report.html
           destination: Test-Automaton-Report.html
       - run:
           command: Test-Automaton-Report.html
