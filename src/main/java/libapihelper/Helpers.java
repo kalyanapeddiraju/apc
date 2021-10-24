@@ -84,5 +84,10 @@ public class Helpers {
     public static String getUniqueId() {
         return String.format("%s_%s", UUID.randomUUID().toString().substring(0, 5), System.currentTimeMillis() / 1000);
     }
+    public static String generateRandomWord() {
+        return String.format(getUniqueId());
+    }
+
+
 
 }

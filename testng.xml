@@ -7,7 +7,4 @@
             <class name="testapi.TestForSampleAPIPOST"/>
         </classes>
     </test> <!-- Test -->
-    <listeners>
-        <listener class-name ="libapihelper.TestListener" />
-    </listeners>
 </suite> <!-- Suite -->s

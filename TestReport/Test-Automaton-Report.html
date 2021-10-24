@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sunday, October 24, 2021, 02:52 PM (BST)</span>
+                    <span class='label suite-start-time blue darken-3'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,15 +123,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>This Testcase to validate to create user with not a valid email - No Domain</span>
-						<span class='test-time'>Sunday, October 24, 2021, 02:52 PM (BST)</span>
+						<span class='test-name'>To Test if User Endpoint Thrown Proper Exceptions : Sending Invalid Email Id</span>
+						<span class='test-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sunday, October 24, 2021, 02:52 PM (BST)</span>
-	<span class='label end-time'>Sunday, October 24, 2021, 02:52 PM (BST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+948ms</span>
+	<span class='label start-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label end-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+379ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -144,18 +145,219 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:52:20 PM</td>
+					<td class='timestamp'>7:04:25 PM</td>
+					<td class='step-details'>This Test Case validate if Valid email has sentEndpointhttps://apiv4.ordering.co/v400/en/demo/users  Input Request{"country_phone_code":1,"level":3,"busy":false,"available":true,"enabled":true,"email":" 0bf20_1635098665@test.com","password": "super1234"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:25 PM</td>
 					<td class='step-details'>Actual HTTP Status is : 400</td>
 				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:52:20 PM</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:25 PM</td>
 					<td class='step-details'>Excepted HTTP Status is :  400</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>2:52:20 PM</td>
-					<td class='step-details'>Actual Response is :  {"error":true,"result":["The Email has already been taken."]}</td>
+					<td class='timestamp'>7:04:25 PM</td>
+					<td class='step-details'>Actual Response is :  {"error":true,"result":["The Email must be a valid email address."]}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>To Test if User Endpoint Thrown Proper Exceptions : Sending request with no email id</span>
+						<span class='test-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label end-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+122ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>7:04:32 PM</td>
+					<td class='step-details'>This Testcase Validate if exception has thrown when passing Empty Email Value  End Point  https://apiv4.ordering.co/v400/en/demo/users  Inout Request{"country_phone_code":1,"level":3,"busy":false,"available":true,"enabled":true,"email":" ","password": "super1234"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:32 PM</td>
+					<td class='step-details'>Actual HTTP Status is : 400</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:32 PM</td>
+					<td class='step-details'>Excepted HTTP Status is :  400</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:32 PM</td>
+					<td class='step-details'>Actual Response is :  {"error":true,"result":["The Email field is required."]}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>To Test if User Endpoint Thrown Proper Exceptions : Sending request with no Password</span>
+						<span class='test-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label end-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+110ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>7:04:34 PM</td>
+					<td class='step-details'>This Testcase validate if exception has thrown when passing Empty Password Value  Endpoint: https://apiv4.ordering.co/v400/en/demo/users  Input Request :{"country_phone_code":1,"level":3,"busy":false,"available":true,"enabled":true,"email":"bf4a7_1635098674@test.com","password": ""}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:34 PM</td>
+					<td class='step-details'>Actual HTTP Status is : 400</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:34 PM</td>
+					<td class='step-details'>Excepted HTTP Status is :  400</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:34 PM</td>
+					<td class='step-details'>Actual Response is :  {"error":true,"result":["The Password field is required."]}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>To Test if User Endpoint Thrown Proper Exceptions : Sending request with invalid email format</span>
+						<span class='test-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label end-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+212ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>7:04:37 PM</td>
+					<td class='step-details'>This Testcase to validate user creation flow with  not a valid emailEndpoint: https://apiv4.ordering.co/v400/en/demo/usersInput Request: {"country_phone_code":1,"level":3,"busy":false,"available":true,"enabled":true,"email":" 3cd87_1635098677@test","password": "super1234"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:37 PM</td>
+					<td class='step-details'>Actual HTTP Status is : 400</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:37 PM</td>
+					<td class='step-details'>Excepted HTTP Status is :  400</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:04:37 PM</td>
+					<td class='step-details'>Actual Response is :  {"error":true,"result":["The Email must be a valid email address."]}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>To Test if User Endpoint Thrown Proper Exceptions : Sending request with not a valid format - No domain address</span>
+						<span class='test-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label end-time'>Sunday, October 24, 2021, 07:04 PM (BST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+464ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>7:04:44 PM</td>
+					<td class='step-details'>This Testcase to validate  user creation flow with not a valid email -  No DomainInputRequest: https://apiv4.ordering.co/v400/en/demo/usersInput Request: {"country_phone_code":1,"level":3,"busy":false,"available":true,"enabled":true,"email":"2056f_1635098684@test","password": "super1234"}</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:04:44 PM</td>
+					<td class='step-details'>Actual HTTP Status is : 200</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:04:44 PM</td>
+					<td class='step-details'>Excepted HTTP Status is :  400</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:04:44 PM</td>
+					<td class='step-details'>Actual Response is :  {"error":false,"result":{"id":11,"name":null,"lastname":null,"email":"4dd0b_1635098682@test","login_type":0,"social_id":null,"photo":null,"birthdate":null,"phone":null,"cellphone":null,"city_id":null,"dropdown_option_id":null,"address":null,"address_notes":null,"zipcode":null,"location":null,"level":3,"language_id":1,"push_notifications":true,"busy":false,"available":true,"enabled":true,"created_at":"2021-10-24 18:04:44","updated_at":"2021-10-24 18:04:44","deleted_at":null,"internal_number":null,"map_data":null,"middle_name":null,"second_lastname":null,"country_phone_code":"1","priority":0,"last_order_assigned_at":null,"last_location_at":null,"phone_verified":false,"email_verified":false,"driver_zone_restriction":false,"pin":null,"business_id":null,"franchise_id":null,"session":{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGl2NC5vcmRlcmluZy5jb1wvdjQwMFwvZW5cL2RlbW9cL3VzZXJzIiwiaWF0IjoxNjM1MDk4Njg0LCJleHAiOjE2NjY2MzQ2ODQsIm5iZiI6MTYzNTA5ODY4NCwianRpIjoibGY0UkhBMEtJaXNHbVczdiIsInN1YiI6MTEsImxldmVsIjozfQ.hS9WSq1jTe344qpO206rB5MxyyiA6rNb8pTWrELf15s","token_type":"bearer","expires_in":31536000}}}</td>
 				</tr>
 			</tbody>
 		</table>
@@ -195,10 +397,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -210,10 +412,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>12</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='15%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='25%'>5</span> others
 				</div>
 			</div>
 		</div>
@@ -232,31 +434,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sunday, October 24, 2021, 02:52 PM (BST)</div>
+					<div class='panel-lead'>Sunday, October 24, 2021, 07:04 PM (BST)</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sunday, October 24, 2021, 02:52 PM (BST)</div>
+			 		<div class='panel-lead'>Sunday, October 24, 2021, 07:04 PM (BST)</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 4s+122ms</div>
+					<div class='panel-lead'>0h 0m 23s+537ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -289,22 +491,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 4,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 1,
-				failChild: 0,
+				passChild: 12,
+				failChild: 3,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 2,
-				exceptionsChild: 0,
+				infoChild: 5,
+				exceptionsChild: 3,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

@@ -88,21 +88,21 @@ public class TestData {
                 "\"busy\":false," +
                 "\"available\":true," +
                 "\"enabled\":true," +
-                "\"email\":" + "\"" + randomEmail +"\","  +
+                "\"email\":" + "\" " + randomEmail +"\","  +
                 "\"password\": \"super1234\"" +
                 "}";
         return inputRequest;
     }
 
     public static String inValidEmailNoDomain(){
-
+        String randomWord=Helpers.generateRandomWord()+"@test";
         String inputRequest = "{" +
                 "\"country_phone_code\":1," +
                 "\"level\":3," +
                 "\"busy\":false," +
                 "\"available\":true," +
                 "\"enabled\":true," +
-                "\"email\":\"testemail1@test\","  +
+                "\"email\":" + "\"" + randomWord +"\","  +
                 "\"password\": \"super1234\"" +
                 "}";
         return inputRequest;
