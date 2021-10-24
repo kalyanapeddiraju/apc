@@ -1,15 +1,15 @@
 version: 2.1
-  jobs:
+jobs:
   build-and-test:
-  docker:
-    - image: cimg/openjdk:11.0
-  steps:
-    - checkout
-    - run:
-  name: Build
-  command: mvn clean install
-  workflows:
+    docker:
+      - image: cimg/openjdk:11.0
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command: mvn clean install
+workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
 
-  jobs:
-    - build-and-test
+    jobs:
+      - build-and-test
