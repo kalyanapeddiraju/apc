@@ -11,8 +11,6 @@ jobs:
       - store_artifacts:
           path: TestReport/Test-Automaton-Report.html
           destination: Test-Automaton-Report.html
-      - run:
-          command: Test-Automaton-Report.html
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     jobs:
