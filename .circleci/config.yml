@@ -8,10 +8,15 @@ jobs:
       - run:
           name: Build
           command: mvn clean install
+      - store_artifacts:
+          path: Test-Automaton-Report.html
+          destination: Test-Automaton-Report.html
+      - store_artifacts:
+          path: coverage
+          destination: coverage
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     jobs:
       - build-and-test
-      - store_artifacts:
-          path: TestReport/Test-Automaton-Report.html
+     
       
