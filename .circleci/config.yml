@@ -7,10 +7,7 @@ jobs:
       - checkout
       - run:
           name: Build
-          command: mvn -B -DskipTests clean package
-      - run:
-          name: Test
-          command: mvn test
+          command: mvn clean install
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
 
